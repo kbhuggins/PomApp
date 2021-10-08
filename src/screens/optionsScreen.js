@@ -1,6 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
+/**
+ *
+ * @desctription creates option screen
+ * @todo set up dark/light mode config, color scheme change config (presets only) & timer sounds
+ */
 const optionsScreen = (props) => {
   return (
     <View style={styles.container}>
@@ -14,6 +19,9 @@ const optionsScreen = (props) => {
   )
 }
 
+/**
+ * @description stylesheet
+ */
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
@@ -35,7 +43,8 @@ const styles = StyleSheet.create({
     width: 150,
     borderColor: '#FFE0F1',
     borderWidth: 2,
-    marginVertical: 25
+    marginVertical: 25,
+    borderRadius: 6
   },
   buttonText: {
     fontSize: 30,

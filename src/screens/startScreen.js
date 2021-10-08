@@ -1,6 +1,17 @@
+/**
+ * @author Kahrin Huggins
+ * @description start screen to give brief app description + start button.
+ * START BUTTON GOES TO POM DETAILS SCREEN
+ */
+
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
+/**
+ *
+ * @description introduction to app
+ * @todo make more stylish (use animations?) and concise (mostly related to text)
+ */
 const startScreen = (props) => {
   return (
     <View style={styles.container}>
@@ -17,6 +28,9 @@ const startScreen = (props) => {
   )
 }
 
+/**
+ * @description stylesheet
+ */
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
@@ -42,7 +56,9 @@ const styles = StyleSheet.create({
     height: 75,
     width: 150,
     borderColor: '#FFE0F1',
-    borderWidth: 2
+    borderWidth: 2,
+    borderRadius: 6,
+    marginVertical: 20
   },
   buttonText: {
     fontSize: 30,

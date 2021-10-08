@@ -1,4 +1,9 @@
-import React, { useState, Component } from 'react'
+/**
+ * @author Kahrin Huggins
+ * @description Screen where user enters in the details (work time, break time & looping) for the timer
+ * CAN GO TO TIMER AND/OR OPTIONS SCREEN
+ */
+import React, { useState } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, Switch, Image, Alert } from 'react-native'
 
 const createAlert = () =>
@@ -9,7 +14,11 @@ const createAlert = () =>
       { text: 'OK', onPress: () => console.log('OK Pressed') }
     ]
   )
-
+/**
+ *
+ * @description form for timer information
+ * @todo implement form submission to use in other screens.
+ */
 const pomDetails = (props) => {
   const [shouldShow, setShouldShow] = useState(false)
   const [isEnabled, setIsEnabled] = useState(false)
@@ -73,6 +82,9 @@ const pomDetails = (props) => {
   )
 }
 
+/**
+ * @description stylesheet
+ */
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
@@ -95,7 +107,8 @@ const styles = StyleSheet.create({
     width: 150,
     borderColor: '#FFE0F1',
     borderWidth: 2,
-    marginVertical: 25
+    marginVertical: 20,
+    borderRadius: 6
   },
   buttonText: {
     fontSize: 30,
